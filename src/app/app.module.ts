@@ -12,6 +12,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import * as firebase from 'firebase';
+import { ProfilePopPage } from '../pages/profile-pop/profile-pop';
+import { ViewUsersPage } from '../pages/view-users/view-users';
 
 
 export const firebaseCred = {
@@ -32,6 +34,8 @@ firebase.initializeApp(firebaseCred);
     DashboardPage,
     LoginPage,
     SignUpPage,
+    ProfilePopPage,
+    ViewUsersPage,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,8 @@ firebase.initializeApp(firebaseCred);
     DashboardPage,
     LoginPage,
     SignUpPage,
+    ProfilePopPage,
+    ViewUsersPage,
   ],
   providers: [
     StatusBar,
